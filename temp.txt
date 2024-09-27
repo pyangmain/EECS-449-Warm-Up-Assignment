@@ -1,0 +1,14 @@
+curl -X POST http://localhost:8000/walker/interact_with_body \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjYyMjI5MGNhYzcwZDAwNzQxMTA5YyIsImVtYWlsIjoidGVzdDFAbWFpbC5jb20iLCJyb290X2lkIjoiNjZmNjIyMjkwY2FjNzBkMDA3NDExMDliIiwiaXNfYWN0aXZhdGVkIjp0cnVlLCJleHBpcmF0aW9uIjoxNzI3NDQ5ODQ2LCJzdGF0ZSI6IkQ4ZlQ2d09IIn0.EZvLl2mTc4lpoTCd0JV-ZLbRADglgHO7usoY1Y3Xbdc" \
+-H "Content-Type: application/json" \
+--data '{"name": "peter"}'
+
+curl -X POST http://localhost:8000/walker/interact_with_age \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjYyMjI5MGNhYzcwZDAwNzQxMTA5YyIsImVtYWlsIjoidGVzdDFAbWFpbC5jb20iLCJyb290X2lkIjoiNjZmNjIyMjkwY2FjNzBkMDA3NDExMDliIiwiaXNfYWN0aXZhdGVkIjp0cnVlLCJleHBpcmF0aW9uIjoxNzI3NDQ5ODQ2LCJzdGF0ZSI6IkQ4ZlQ2d09IIn0.EZvLl2mTc4lpoTCd0JV-ZLbRADglgHO7usoY1Y3Xbdc" \
+-H "Content-Type: application/json" \
+--data '{"age": "55"}'
+
+curl -X POST http://localhost:8000/walker/interact_with_favfood \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjYyMjI5MGNhYzcwZDAwNzQxMTA5YyIsImVtYWlsIjoidGVzdDFAbWFpbC5jb20iLCJyb290X2lkIjoiNjZmNjIyMjkwY2FjNzBkMDA3NDExMDliIiwiaXNfYWN0aXZhdGVkIjp0cnVlLCJleHBpcmF0aW9uIjoxNzI3NDQ5ODQ2LCJzdGF0ZSI6IkQ4ZlQ2d09IIn0.EZvLl2mTc4lpoTCd0JV-ZLbRADglgHO7usoY1Y3Xbdc" \
+-H "Content-Type: application/json" \
+--data '{"favfood": "spaghetti and meatballs"}'
